@@ -49,18 +49,18 @@ public class GestionProductos extends AppCompatActivity {
         btnSalir=(Button)findViewById(R.id.btnSalir);
 
         btnAgregar.setOnClickListener((v)-> {
-            ejecutarServicio("http://192.168.137.1/dvcolibri/insertar_producto.php");
+            ejecutarServicio("http://localhost/dvcolibri/insertar_producto.php");//Debes cambiar el "localhost" por el ip de tu pc
         });
 
         btnBuscar.setOnClickListener((v)-> {
-            buscarProducto("http://192.168.137.1/dvcolibri/buscar_producto.php?idProducto="+edtCodigo.getText());
+            buscarProducto("http://localhost/dvcolibri/buscar_producto.php?idProducto="+edtCodigo.getText());//Debes cambiar el "localhost" por el ip de tu pc
             ;
         });
 
         btnEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ejecutarServicio("http://192.168.137.1/dvcolibri/editar_producto.php");
+                ejecutarServicio("http://localhost/dvcolibri/editar_producto.php");//Debes cambiar el "localhost" por el ip de tu pc
 
             }
         });
@@ -68,7 +68,7 @@ public class GestionProductos extends AppCompatActivity {
         btnEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                eliminarProducto("http://192.168.137.1/dvcolibri/eliminar_producto.php");
+                eliminarProducto("http://localhost/dvcolibri/eliminar_producto.php");//Debes cambiar el "localhost" por el ip de tu pc
 
             }
         });

@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 usuario=edtUsuario.getText().toString();
                 password=edtPassword.getText().toString();
                 if(!usuario.isEmpty() && !password.isEmpty()){
-                    validarUsuario("http://192.168.137.1/dvcolibri/validar_usuario.php");
+                    validarUsuario("http://localhost/dvcolibri/validar_usuario.php");//Debes cambiar el "localhost" por el ip de tu pc
                 }else{
                     Toast.makeText(MainActivity.this,"No se permiten campos vacios",Toast.LENGTH_SHORT).show();
                 }
