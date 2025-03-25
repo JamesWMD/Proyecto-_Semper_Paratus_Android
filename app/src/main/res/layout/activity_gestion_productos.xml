@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".GestionProductos">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="151dp"
+                android:layout_height="113dp"
+                android:layout_marginBottom="30dp"
+                app:srcCompat="@drawable/caja_de_entrega" />
+
+            <!-- LinearLayout horizontal para EditText y Button -->
+            <TextView
+                android:id="@+id/textNombreAplication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="GESTION DE PRODUCTOS"
+                android:textSize="27dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity=""
+                android:padding="0dp">
+
+                <EditText
+                    android:id="@+id/edtCodigo"
+                    android:layout_width="175dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="11dp"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Codigo"
+                    android:textAlignment="center"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/btnBuscar"
+                    android:layout_width="175dp"
+                    android:layout_height="40dp"
+                    android:background="#D6F5A8"
+                    android:text="Buscar"
+                    android:textColor="#5D5151"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtNombreProducto"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:textAlignment="center"
+                android:hint="Ingrese el Nombre Producto"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/edtPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:textAlignment="center"
+                android:hint="Ingreses el Precio"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp" />
+
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="#D6F5A8"
+                android:text="Guardar"
+                android:textColor="#5D5151"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnEditar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Editar"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#5D5151"
+                android:background="#FFA07A" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Eliminar"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#DC143C" />
+
+            <Button
+                android:id="@+id/btnSalir"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Salir"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#000000" />
+
+
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
